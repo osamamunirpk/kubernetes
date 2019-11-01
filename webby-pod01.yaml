@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webservicei-01
+  labels:
+    name: Testwebservice
+spec:
+  containers:
+  -
+    name: web
+    image: mhausenblas/simpleservice:0.5.0
+    ports:
+     -
+       name: webport
+       containerPort: 8888 
+       protocol: TCP

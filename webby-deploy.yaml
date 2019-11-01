@@ -1,0 +1,21 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: webby
+  labels: 
+    app: webby
+spec:
+  selector:
+    matchLabels:
+      app: webby
+  replicas: 3 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: webby
+    spec:
+      containers:
+      - name: webby
+        image: gcr.io/artful-tractor-220916/webby:01
+        ports:
+        - containerPort: 8888

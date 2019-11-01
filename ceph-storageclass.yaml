@@ -1,0 +1,16 @@
+apiVersion: storage.k8s.io/v1beta1
+kind: StorageClass
+metadata:
+  name: dynamic
+  annotations:
+     storageclass.beta.kubernetes.io/is-default-class: "true"
+provisioner: kubernetes.io/rbd
+parameters:
+  monitors: 10.8.218.224:6789,10.10.97.131:6789,10.11.232.38:6789  #This needs changed to your monitors
+  # For example: 10.14.243.210:6789,10.2.190.185:6789,10.1.56.23:6789
+  adminId: admin  
+  adminSecretName: ceph-secret  
+  adminSecretNamespace: default  
+  pool: kube  
+  userId: admin
+  userSecretName: ceph-secret

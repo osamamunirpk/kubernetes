@@ -1,0 +1,58 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-webby
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: webby
+    image: gcr.io/artful-tractor-220916/159-barbour-webby
+    ports:
+    - containerPort: 8888
+  - name: nginx
+    image: nginx:1.7.9
+    ports:
+    - containerPort: 80
+    - containerPort: 443
+    volumeMounts:
+    - name: nginx-proxy-config
+      mountPath: /etc/nginx/nginx.conf
+      subPath: nginx.conf
+    - name: my-index-file
+      mountPath: /var/www/index.html
+      subPath: index.html
+    - name: static-demo-data
+      mountPath: /var/www/static/nginx.txt
+      subPath: nginx.txt
+    - name: top-secret-keys
+      mountPath: /etc/nginx/ssl
+      readOnly: true
+  - name: ghost
+    image: ghost
+    command:
+    - sh
+    - -c
+    - cp /ghost-config/ghost-config.js /var/lib/ghost/config.js
+      && docker-entrypoint.sh node current/index.js
+    volumeMounts:
+    - mountPath: /ghost-config
+      name: config
+  volumes:
+  - name: nginx-proxy-config
+    configMap:
+      name: nginx-conf
+  - name: my-index-file
+    configMap:
+      name: index-file
+  - name: static-demo-data
+    configMap:
+      name: nginx-txt
+  - name: top-secret-keys
+    secret:
+      secretName: webby-keys  
+  - name: config
+    configMap:
+      defaultMode: 420
+      name: ghost-config

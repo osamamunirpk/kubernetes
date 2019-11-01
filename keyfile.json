@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "artful-tractor-220916",
+  "private_key_id": "332799aa4c96611069c6f167c1f2256a07c88a33",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAo2yQJCxEHLQz\nWVrZ1PuoicL5lcVfWAxMbAojNRg313rhj2eSBMAkErXyNKqkky76TzqtvKIxlCwu\nFQlfhO3shRvXey29ylTKSjRHvIw5ByWd5YaGSKR63EKS5LsgcvY6Rzmmt+2CB8DT\nJ1JSWaOjFkTq/lzqQdhpCs3qBuSJ+mQMmNQOrezciiBZdVRCmGTs1WwlMu7+9IjX\nrAr/uVH9dpyT3lxlhAJZTgAuHEnQ7wDTfZab2+YXX38QALti0ntwVbk1kMUqZF/A\nqBf7hZTmWE/txI5GhdRSzFAcRni7VqMRYAhTZIDxqzlcAKj+9fGEMDNaXFRD9vIY\nxNYa1PGZAgMBAAECggEAEJ9JY9qrMyli5zdjnn5BRNa2S0EAKez4CrQb39PaBh+C\ny+nK3w+n4LT4nDCtNMw6doDVqF4phKurcEKCb4qR2SHXOC250bGexWHHxxTe6KDU\nPx6qD/Y+sxdEa1ZvSyqAUqEIuXkPdnPi0JWJBfAULaNjSP+v1srduJqlD/eOStV4\n3Pw67OtE/TxvdRYcQOsN30rXRzKCKtOCs+/uEBlhqQb+/lHuGQypejr52H+tXMIK\nuxWEXAEMtMnMA+hLaRdi4opPZJbm1lARFdaz2KejB+yLxFV7n4H3yx/Y0ytk34Hp\nyDwz/rnLgvVvDjZjNfet1marYakW8Ppz6/EQFe6aPQKBgQDsK+FPa96+Gt3RPA9i\n0e0bOJ2hoCpgmdJrX2KiAWtBAEOFBWww4uBw4hyxaZ4/5eVUlMFG2eVWkhHFYWRb\n3Wnqu1UDc4ZkThbYH9fZaXBXu1CfChV7D3qho1WelmmM4tES2e5ZpAZevihHm6cS\nM8mcKKohEMCYcB0u8Lj+M+u+mwKBgQDQz99QbuvjROQBLp7JVHPAYqesAZR34YDu\nXn/qMRPQsAfEm6sOFgCqAbKA/tI/IrOApQipUqBhWl188Yz3kII79y2e2ybhAmEF\n47tMf11eJPAS/oR6bifLd2QLbX97lNpuTYlNfof/TzgRUgH5GnIDJOfRiXZnfLBM\nwiUaRH9Z2wKBgQCug2IzGMd3/ExKbzIDWJH3WmeIZdzKkv+cndg5VAkX+ATsh2xB\n13P3le2T3zKzjsJeNKl5HEvOI5OEIYpSI5M/g3u3WCdHeTiCLU2HdtUvztctHftv\neqmoRRRgYk7Ob1AEuQraLE0Utzj2aPsUhTYF8Tp9wm4+diHqbLCWDnG13wKBgQCI\nQn3JMPjBL51RoCiB3JhEPJyJw+YsbH0ED6qNGkWB8ry+8Y4n/Pel+MGRJ7fu9ygH\nlKoYRBDgNmW3OLDyg9xYYS3l8cBnKHRDsZ3xh1NYMeZvnqK4edWCEoC4bFW6QSJg\nxDwK07zPP9SoiMk80qL/pj+YHomjclxhWnd3sqcf7QKBgBJ8TDddpLji4dfIvWWr\nMd6H7um0+pZ8ht6yPLoNcmLlSiwyBZhIyvvmXkLVjJVrH/Ykj+s3S28V6IRp5kHK\nedra+SLS53AZU/TgZkUXZLdYJqhHIrz9LagHTpJWT1MR/sMW0YZzgtedI9pFKXBj\nNW1d7h0TbMQPe/ROa2oTrIIz\n-----END PRIVATE KEY-----\n",
+  "client_email": "registry-push@artful-tractor-220916.iam.gserviceaccount.com",
+  "client_id": "114414769313593608438",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/registry-push%40artful-tractor-220916.iam.gserviceaccount.com"
+}
